@@ -106,12 +106,23 @@ PRODUCT_COPY_FILES += \
 
 # init.d support
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/etc/init.d/00banner:system/etc/init.d/00banner \
     vendor/cm/prebuilt/common/bin/sysinit:system/bin/sysinit
 
+# Set Selinux Permissive 
+# Configurable init.d
+# PropModder files
 # userinit support
+# SELinux filesystem labels
 PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/etc/init.d/90userinit:system/etc/init.d/90userinit
+	$(call find-copy-subdir-files,*,vendor/cm/prebuilt/common/etc/init.d,system/etc/init.d)
+
+PRODUCT_COPY_FILES += \
+	$(call find-copy-subdir-files,*,vendor/cm/prebuilt/common/etc/cron,system/etc/cron)
+
+# Configurable
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/etc/helpers.sh:system/etc/helpers.sh \
+    vendor/cm/prebuilt/common/etc/init.d.cfg:system/etc/init.d.cfg
 
 # CM-specific init file
 PRODUCT_COPY_FILES += \
@@ -148,6 +159,10 @@ PRODUCT_PACKAGES += \
     VoicePlus \
     Basic \
     libemoji
+
+# AICP packages
+PRODUCT_PACKAGES += \
+    KernelTweaker
 
 # Custom CM packages
 PRODUCT_PACKAGES += \
