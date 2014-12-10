@@ -160,19 +160,15 @@ PRODUCT_PACKAGES += \
     Basic \
     libemoji
 
-# AICP packages
-PRODUCT_PACKAGES += \
-    KernelTweaker
-
 # Custom CM packages
 PRODUCT_PACKAGES += \
     Launcher3 \
     Trebuchet \
-    DSPManager \
+    AudioFX \
     libcyanogen-dsp \
     audio_effects.conf \
     CMWallpapers \
-    Apollo \
+    Eleven \
     CMFileManager \
     LockClock \
     CMUpdater \
