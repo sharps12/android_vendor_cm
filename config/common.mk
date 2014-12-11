@@ -165,14 +165,11 @@ PRODUCT_PACKAGES += \
     Launcher3 \
     Trebuchet \
     AudioFX \
-<<<<<<< HEAD
     libcyanogen-dsp \
     audio_effects.conf \
     CMWallpapers \
     Eleven \
-=======
     CMWallpapers \
->>>>>>> tem/cm-12.0
     CMFileManager \
     Eleven \
     LockClock \
