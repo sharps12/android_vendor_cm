@@ -108,9 +108,16 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/bin/sysinit:system/bin/sysinit
 
+<<<<<<< HEAD
 # Set Selinux Permissive 
 # Configurable init.d
 # PropModder files
+=======
+# fstrim support
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/etc/init.d/99fstrim:system/etc/init.d/99fstrim
+
+>>>>>>> tem/cm-12.0
 # userinit support
 # SELinux filesystem labels
 PRODUCT_COPY_FILES += \
