@@ -102,22 +102,19 @@ PRODUCT_COPY_FILES += \
 # LCD density backup
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/bin/99-backup.sh:system/addon.d/99-backup.sh \
-    vendor/cm/prebuilt/common/etc/backup.conf:system/etc/backup.conf 
+    vendor/cm/prebuilt/common/etc/backup.conf:system/etc/backup.conf
+
+# fstrim support
+PRODUCT_COPY_FILES += \
+    vendor/cm/prebuilt/common/etc/init.d/99fstrim:system/etc/init.d/99fstrim 
 
 # init.d support
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/common/bin/sysinit:system/bin/sysinit
 
-<<<<<<< HEAD
 # Set Selinux Permissive 
 # Configurable init.d
 # PropModder files
-=======
-# fstrim support
-PRODUCT_COPY_FILES += \
-    vendor/cm/prebuilt/common/etc/init.d/99fstrim:system/etc/init.d/99fstrim
-
->>>>>>> tem/cm-12.0
 # userinit support
 # SELinux filesystem labels
 PRODUCT_COPY_FILES += \
