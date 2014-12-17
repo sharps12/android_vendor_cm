@@ -120,14 +120,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/cm/prebuilt/common/etc/init.d,system/etc/init.d)
 
-<<<<<<< HEAD
-=======
 # Proprietary latinime lib needed for Keyboard swyping
 PRODUCT_COPY_FILES += \
     vendor/cm/prebuilt/lib/libjni_latinimegoogle.so:system/lib/libjni_latinimegoogle.so
 
 # userinit support
->>>>>>> tem/cm-12.0
 PRODUCT_COPY_FILES += \
 	$(call find-copy-subdir-files,*,vendor/cm/prebuilt/common/etc/cron,system/etc/cron)
 
@@ -181,17 +178,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Launcher3 \
     Trebuchet \
-<<<<<<< HEAD
-    AudioFX \
-    libcyanogen-dsp \
-    audio_effects.conf \
     CMWallpapers \
-    Eleven \
-=======
     DSPManager \
     libcyanogen-dsp \
     audio_effects.conf \
->>>>>>> tem/cm-12.0
     CMWallpapers \
     CMFileManager \
     Eleven \
